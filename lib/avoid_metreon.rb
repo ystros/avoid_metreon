@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
-require 'avoid_metreon/moscone_event_crawler'
+require 'avoid_metreon/event_loader'
 
-result = AvoidMetreon::MosconeEventCrawler.new.crawl
+result = AvoidMetreon::EventLoader.new.for_date(Date.today)
 
 pp result
