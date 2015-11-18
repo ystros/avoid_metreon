@@ -3,19 +3,5 @@
   %head
     %title Is Metreon Safe?
     %link{ rel: "stylesheet",  href: "styles/home.css" }
-  %body.status-avoid
-    .card
-      %h1 Avoid!
-      %p
-        %strong Oracle World
-        is going on from November 1 to November 20. It will likely be very
-        crowded in the area.
-    .card.no
-      %h1 Warning!
-      %p
-        %strong Oracle World
-        is going on from November 1 to November 20. It could be crowded in the
-        area.
-    .card.no
-      %h1 Okay!
-      %p No events scheduled at Moscone Center.
+  %body{ :class => "status-#{event.status}" }
+    = render "status_#{event.status}", event: event
