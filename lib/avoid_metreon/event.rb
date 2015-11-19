@@ -2,6 +2,11 @@ module AvoidMetreon
   # Represents an event, including its name, start and end dates.
   class Event
     DATE_FORMAT = '%B %d'
+    CROWDED_EVENT_KEYWORDS = [
+      'Oracle', 'Salesforce', 'Dreamforce', 'Google', 'Apple', 'Amazon', 'AWS',
+      'GDC', 'Game Developers Conference'
+    ]
+
     attr_reader :name, :start_date, :end_date, :url
 
     def initialize(name:, start_date:, end_date:, url:)
@@ -26,7 +31,17 @@ module AvoidMetreon
     end
 
     def status
-      'avoid'
+      if crowded?
+        'avoid'
+      else
+        'warn'
+      end
+    end
+
+    private
+
+    def crowded?
+      CROWDED_EVENT_KEYWORDS.any? { |keyword| name.include?(keyword) }
     end
   end
 end
