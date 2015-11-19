@@ -1,13 +1,10 @@
 # AvoidMetreon
 
-A simple generator that looks up the schedule for events at Moscone Center and
-generates a page warning whether to expect the surrounding areas (Metreon,
-Yerba Buena, etc) to be crowded.
+A simple generator that looks up the schedule for events at Moscone Center and generates a page warning whether to expect the surrounding areas (Metreon, Yerba Buena, etc) to be crowded. If the event is one of the known large events in the area, it will return with a status of 'Avoid.' If there's an event in general, it will return with a status of 'Warning.' Otherwise, things are presumed to be 'Okay' within the area.
 
 ## Really?
 
-Look, I decided to go to the area not realizing Dreamforce was going on. Then
-I did it again during Oracle World. A bad time was had.
+Look, I decided to go to the area not realizing Dreamforce was going on. Then I did it again during Oracle World. A bad time was had.
 
 ## Installation
 
