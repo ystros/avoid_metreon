@@ -8,6 +8,7 @@ $ok-text: #fff;
 body {
   font-size: 16pt;
   line-height: 1.25em;
+  text-shadow: 1px 1px 4px #000;
 }
 
 p {
@@ -37,9 +38,7 @@ p {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-
   text-align: center;
-  text-shadow: 1px 1px 4px #000;
 
   h1 {
     font-size: 4em;
