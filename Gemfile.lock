@@ -45,6 +45,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    sass (3.4.19)
     thread_safe (0.3.5)
     tilt (2.0.1)
     tzinfo (1.2.2)
@@ -65,6 +66,7 @@ DEPENDENCIES
   avoid_metreon!
   bundler (~> 1.10)
   rake (~> 10.0)
+  sass
 
 BUNDLED WITH
    1.10.6

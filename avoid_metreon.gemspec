@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency 'sass'
   spec.add_dependency 'wombat', '~> 2.4.0'
   spec.add_dependency 'haml', '~> 4.0.7'
 end
