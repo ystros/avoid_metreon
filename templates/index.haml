@@ -2,7 +2,13 @@
 %html
   %head
     %title Is Metreon Safe?
+    %link{ rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" }
     %link{ rel: "stylesheet",  href: "styles/home.css" }
   %body{ :class => "status-#{event.status}" }
+    .social-links
+      %a{ href: "https://twitter.com/ystros", title: "Twitter" }
+        %i.fa.fa-twitter
+      %a{ href: "https://github.com/ystros/avoid_metreon", title: "Github" }
+        %i.fa.fa-github
     = render "status_#{event.status}", event: event
     %p.last-updated Last updated #{Date.today}.

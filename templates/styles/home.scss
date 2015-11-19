@@ -14,8 +14,21 @@ p {
   margin: 0;
 }
 
-.no {
-  display: none;
+.social-links {
+  padding: 0.5em 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1.0;
+    }
+  }
 }
 
 .card {
