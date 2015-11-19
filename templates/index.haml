@@ -5,3 +5,4 @@
     %link{ rel: "stylesheet",  href: "styles/home.css" }
   %body{ :class => "status-#{event.status}" }
     = render "status_#{event.status}", event: event
+    %p.last-updated Last updated #{Date.today}.
