@@ -27,7 +27,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To generate a page, simply run:
+
+    $ avoid_metreon <date>
+
+This will output the page to standard out, from which you may save it to a file, upload to S3, etc. Date should be passed in yyyy-mm-dd format. If date is omitted, then a page for the current date is generated.
 
 ## Development
 
