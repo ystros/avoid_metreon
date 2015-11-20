@@ -22,9 +22,9 @@ module AvoidMetreon
 
     def date_range
       if start_date == end_date
-        start_date.strftime(DATE_FORMAT)
+        'on ' + start_date.strftime(DATE_FORMAT)
       else
-        [start_date, end_date]
+        'from ' + [start_date, end_date]
           .map { |d| d.strftime(DATE_FORMAT) }
           .join(' to ')
       end
