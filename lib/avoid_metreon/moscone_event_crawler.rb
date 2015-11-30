@@ -7,7 +7,7 @@ module AvoidMetreon
 
     base_url 'http://www.moscone.com/site/do/event/list'
 
-    items 'xpath=//table[@id=\'list\']/tr[td]', :iterator do
+    items 'xpath=//table[@id=\'list\']/tr[td+td+td+td]', :iterator do
       start_date xpath: 'td[1]' do |d|
         Date.strptime(d.split(' - ').first, '%m/%d/%y')
       end
