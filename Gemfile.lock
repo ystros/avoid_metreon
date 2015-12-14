@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    avoid_metreon (0.0.2)
+    avoid_metreon (0.0.3)
       haml (~> 4.0.7)
       wombat (~> 2.4.0)
 
