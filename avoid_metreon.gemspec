@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Avoid Metreon generator'
   spec.description   = 'Generates a simple page that says whether there is a conference going on at Moscone Center and therefore you should avoid the Metreon / Yerba Buena area.'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = 'http://shouldiavoidmetreon.com/'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
