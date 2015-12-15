@@ -5,7 +5,9 @@ module AvoidMetreon
   class MosconeEventCrawler
     include Wombat::Crawler
 
-    base_url 'http://www.moscone.com/site/do/event/list'
+    CALENDAR_URL = 'http://www.moscone.com/site/do/event/list'
+
+    base_url CALENDAR_URL
 
     items 'xpath=//table[@id=\'list\']/tr[td[4]]', :iterator do
       start_date xpath: 'td[1]' do |d|
